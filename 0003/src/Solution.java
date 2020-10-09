@@ -14,13 +14,11 @@ class Solution {
 
         for(int i = 0; i < s.length(); i++){
             if(map.containsKey(s.charAt(i)) && map.get(s.charAt(i)) >= flag){
-                count = i - map.get(s.charAt(i));
-                flag = map.get(s.charAt(i))+1;
+                flag = map.get(s.charAt(i)) + 1;
+            }else {
+                count = i - flag + 1;
             }
-            else {
-                count ++;
-            }
-            map.put(s.charAt(i), i);
+            map.put(s.charAt(i),i);
             max = Math.max(max, count);
         }
         return max;

@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        String s = "dvdk";
+        String s = "pwwkew";
         Solution solution = new Solution();
 
         System.out.println(solution.lengthOfLongestSubstring(s));

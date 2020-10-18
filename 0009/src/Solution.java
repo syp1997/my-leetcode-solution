@@ -6,11 +6,12 @@ class Solution {
         }
 
         int y = 0;
+        int r = x;
 
-        while (x >0 ){
-            int a = x % 10;
+        while (r != 0 ){
+            int a = r % 10;
             y = 10*y + a;
-            x = x / 10;
+            r = r / 10;
         }
         return y == x;
     }
